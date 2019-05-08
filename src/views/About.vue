@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <img 
-      src="https://static.wixstatic.com/media/5e14d6_5dd5f40391f44e6682a7d0ca1afd31c0~mv2.jpg/v1/fill/w_1064,h_594,al_c,q_85,usm_0.66_1.00_0.01/IMG_3202_JPG.webp" 
+      src="@/assets/chenni-sunset.png" 
       alt="chenni taking a picture"
     >
     <div>
