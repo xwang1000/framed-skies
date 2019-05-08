@@ -1,31 +1,56 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="header">
+      <div class="header__brand">
+        <h1>Sheng Chenni</h1>
+        <p>contemporary jewellery</p>
+      </div>
+      <NavBar />
     </div>
+
     <router-view />
   </div>
 </template>
 
+<script>
+import NavBar from '@/components/NavBar.vue'
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: work sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  padding: 10px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+h1 {
+  font-weight: 400;
+  font-family: work sans;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.header {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
+
+.header__brand * {
+  margin: 0;
+}
+
+.header__brand p {
+  font-weight: 400;
+  font-family: work sans;
+  color: grey;
+  opacity: .7;
+}
+
 </style>
