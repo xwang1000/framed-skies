@@ -5,7 +5,10 @@
         v-for="category in pictureCategories"
         :key="category"
         :class="{ disabledCategory: category !== selectedCategory }"
-      >{{category}}</span>
+        @click="selectCategory(category)"
+      >
+        {{category}}
+      </span>
     </div>
     <div class="gallery">
       <img
@@ -30,8 +33,13 @@ export default {
     };
   },
   computed: {
-    pictureCategories() {
+    pictureCategories () {
       return [...new Set(this.pictures.map(picture => picture.category))];
+    }
+  },
+  methods: {
+    selectCategory (category) {
+      this.selectedCategory = category
     }
   }
 };
@@ -40,14 +48,18 @@ export default {
 <style scoped>
 .options {
   padding: 20px 30px;
+  padding-top: 0;
 }
 
 .options span {
   display: inline-block;
   border-radius: 5px;
-  margin: 0 5px;
-  margin-bottom: 5px;
+  margin: 0 5px 5px 5px;
   padding: 3px 5px;
+}
+
+.options span:hover {
+  cursor: pointer;
 }
 
 .options span:not(.disabledCategory) {
