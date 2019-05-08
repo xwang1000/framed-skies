@@ -45,13 +45,25 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  padding: 1.4rem 2rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-wrap {
+  padding: 1.4rem 2rem;
+  padding-bottom: 7rem;
+}
+
 @media screen and (max-width: 800px) {
   html {
     font-size: 90%;
   }
 
   .header {
-    padding: .8rem 1rem;
+    padding: .8rem .5rem;
   }
 
   .header h1 {
@@ -63,8 +75,8 @@ body {
   }
 
   .content-wrap {
-    padding: .8rem 1rem;
-    padding-bottom: 4rem;
+    padding: .8rem .7rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -75,13 +87,6 @@ h1 {
 
 p {
   line-height: 1.5rem;
-}
-
-.header {
-  padding: 1.4rem 2rem;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
 }
 
 .header__brand * {
@@ -103,11 +108,6 @@ p {
   color: #2c3e50;
   padding: 0 5px;
   text-decoration: none;
-}
-
-.content-wrap {
-  padding: 1.4rem 2rem;
-  padding-bottom: 4rem;
 }
 
 </style>

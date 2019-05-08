@@ -23,7 +23,7 @@
   border-top: 1px solid #eee;
   position: absolute;
   width: 100%;
-  height: 4rem;
+  height: 7rem;
   background-color: white;
   bottom: 0;
 }

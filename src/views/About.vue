@@ -49,12 +49,11 @@
   max-width: 40rem;
   float: right;
   margin: 0 0 20px 30px;
-  border-radius: 3px;
 }
 
 @media screen and (max-width: 800px) {
   .about img {
-    width: 300px;
+    width: 50vw;
     margin: 5px 0 10px 10px;
   }
 }
