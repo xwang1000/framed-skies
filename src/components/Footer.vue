@@ -6,10 +6,8 @@
 
 <style scoped>
 .footer {
-  background-color: #414c57;
-  color: white;
+  border-top: 1px solid #eee;
   position: absolute;
-  bottom: 0;
   width: 100%;
   padding: .9rem 1rem;
   height: 3rem;
