@@ -53,9 +53,9 @@ export default {
 </script>
 
 <style scoped>
+
 .options {
-  padding: 20px 30px;
-  padding-top: 0;
+  padding: 0 10px;
 }
 
 .options span {
@@ -92,6 +92,18 @@ export default {
   width: 400px;
   height: 300px;
   transition: all .8s ease;
+}
+
+@media screen and (max-width: 820px) {
+  .gallery img:not(selectedPicture) {
+    width: 40vw;
+    height: 100px;
+  }
+
+  .gallery img.selectedPicture {
+    width: 83vw;
+    height: 200px;
+  }
 }
 
 </style>
