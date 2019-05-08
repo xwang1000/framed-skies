@@ -12,6 +12,7 @@
   padding: .9rem 1rem;
   height: 3rem;
   box-sizing: border-box;
+  bottom: 0;
 }
 
 .footer p {
