@@ -46,7 +46,7 @@ body {
 }
 
 .content-wrap {
-  padding: 20px;
+  padding: 1.4rem 2rem;
   padding-bottom: 4rem;
 }
 
