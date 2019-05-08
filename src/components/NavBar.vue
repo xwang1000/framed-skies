@@ -1,5 +1,6 @@
 <template>
   <div id="nav">
+    <router-link to="/works">Works</router-link>
     <router-link to="/sky-collector">Sky Collector</router-link>
     <router-link to="/about">About</router-link>
   </div>

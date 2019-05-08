@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import Works from "./views/Works.vue";
 import About from "./views/About.vue";
 import SkyCollector from './views/SkyCollector.vue';
 
@@ -14,6 +15,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/works",
+      name: "works",
+      component: Works
     },
     {
       path: '/sky-collector',
