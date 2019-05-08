@@ -27,13 +27,17 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #414c57;
   padding: 10px;
 }
 
 h1 {
   font-weight: 400;
   font-family: work sans;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 .header {

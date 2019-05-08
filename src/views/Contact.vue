@@ -13,7 +13,7 @@
 </template>
 
 <style scoped>
-  .contact {
-    text-align: left;
-  }
+.contact {
+  text-align: left;
+}
 </style>
