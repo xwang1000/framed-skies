@@ -45,22 +45,26 @@ body {
   min-height: 100vh;
 }
 
-.content-wrap {
-  padding: 1.4rem 2rem;
-  padding-bottom: 4rem;
-}
-
 @media screen and (max-width: 800px) {
   html {
     font-size: 90%;
   }
 
+  .header {
+    padding: .8rem 1rem;
+  }
+
   .header h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .header p {
-    font-size: .9rem;
+    font-size: .8rem;
+  }
+
+  .content-wrap {
+    padding: .8rem 1rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -99,6 +103,11 @@ p {
   color: #2c3e50;
   padding: 0 5px;
   text-decoration: none;
+}
+
+.content-wrap {
+  padding: 1.4rem 2rem;
+  padding-bottom: 4rem;
 }
 
 </style>
