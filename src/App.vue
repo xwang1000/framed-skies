@@ -8,27 +8,59 @@
       <NavBar />
     </div>
 
-    <router-view />
+    <div class="content-wrap">
+      <router-view />
+    </div>
+
+    <Footer />
   </div>
+
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
-
+import Footer from '@/components/Footer.vue'
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
   }
 }
 </script>
 <style>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: work sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #414c57;
-  padding: 10px;
+  transition: all .6s ease;
+  height: 100vh;
+  position: relative;
+}
+
+.content-wrap {
+  padding: 40px 20px;
+  padding-bottom: 2.5rem;
+  height: 90vh;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 90%;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .header p {
+    font-size: .9rem;
+  }
 }
 
 h1 {
@@ -41,6 +73,7 @@ p {
 }
 
 .header {
+  padding: 1.4rem 2rem;
   text-align: left;
   display: flex;
   justify-content: space-between;

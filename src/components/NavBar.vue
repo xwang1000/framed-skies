@@ -17,7 +17,8 @@
   font-weight: 500;
   font-family: work sans, sans-serif;
   color: #2c3e50;
-  padding: 0 5px;
+  padding: 0 .5rem;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
