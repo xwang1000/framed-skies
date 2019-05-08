@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div class="header">
-      <div class="header__brand">
+      <router-link to="/">
+        <div class="header__brand">
         <h1>Sheng Chenni</h1>
         <p>contemporary jewellery</p>
       </div>
+      </router-link>
       <NavBar />
     </div>
 
@@ -87,6 +89,16 @@ p {
   font-family: work sans;
   color: grey;
   opacity: .7;
+}
+
+.header a {
+  opacity: .8;
+  font-size: .9rem;
+  font-weight: 500;
+  font-family: work sans, sans-serif;
+  color: #2c3e50;
+  padding: 0 5px;
+  text-decoration: none;
 }
 
 </style>

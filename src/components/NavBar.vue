@@ -1,6 +1,5 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/contact">Contact</router-link>
   </div>
@@ -17,7 +16,7 @@
   font-weight: 500;
   font-family: work sans, sans-serif;
   color: #2c3e50;
-  padding: 0 .5rem;
+  padding: 0 5px;
   text-decoration: none;
 }
 
