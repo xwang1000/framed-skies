@@ -43,4 +43,32 @@
 .about {
   text-align: left;
 }
+
+.about img {
+  width: 80vw;
+  max-width: 40rem;
+  float: right;
+  margin: 0 0 20px 30px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .about img {
+    width: 300px;
+    margin: 5px 0 10px 10px;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  padding-top: 5rem;
+  opacity: .7;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
 </style>
