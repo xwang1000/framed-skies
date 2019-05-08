@@ -17,6 +17,8 @@
         :key="picture.name"
         :src="`${publicPath + picture.name}`"
         :alt="picture.name"
+        :class="{ selectedPicture: picture.name === selectedPicture }"
+        @click="selectPicture(picture.name)"
       >
     </div>
   </div>
@@ -29,7 +31,8 @@ export default {
     return {
       publicPath: process.env.BASE_URL,
       pictures,
-      selectedCategory: "untitled-moods"
+      selectedCategory: 'untitled-moods',
+      selectedPicture: 'null'
     };
   },
   computed: {
@@ -40,6 +43,10 @@ export default {
   methods: {
     selectCategory (category) {
       this.selectedCategory = category
+    },
+
+    selectPicture (name) {
+      this.selectedPicture = name
     }
   }
 };
@@ -73,10 +80,18 @@ export default {
   border: 0.5px solid grey;
 }
 
-.gallery img {
+.gallery img:not(selectedPicture) {
   width: 200px;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
   margin: 5px;
+  transition: all .8s ease;
 }
+
+.gallery img.selectedPicture {
+  width: 400px;
+  height: 300px;
+  transition: all .8s ease;
+}
+
 </style>
