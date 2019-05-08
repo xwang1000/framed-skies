@@ -6,14 +6,19 @@
 
 <style scoped>
 .footer {
-  padding: 20px 40px;
-  margin-top: 50px;
   background-color: #414c57;
   color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .9rem 1rem;
+  height: 3rem;
+  box-sizing: border-box;
 }
 
 .footer p {
-  text-align: left;
+  text-align: right;
   opacity: .7;
+  margin: 0;
 }
 </style>

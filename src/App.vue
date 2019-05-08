@@ -39,14 +39,13 @@ body {
   text-align: center;
   color: #414c57;
   transition: all .6s ease;
-  height: 100vh;
   position: relative;
+  min-height: 100vh;
 }
 
 .content-wrap {
-  padding: 40px 20px;
-  padding-bottom: 2.5rem;
-  height: 90vh;
+  padding: 20px;
+  padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 800px) {
