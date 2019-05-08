@@ -2,7 +2,7 @@
   <div>
     <div class="image-wrapper">
       <img class="home__image"
-        src="@/assets/untitled-moods.png" 
+        :src="`${publicPath}untitled-moods.png` "
         alt="home image"
       />
       <p>photography: Chang Ting-Hsuan</p>
@@ -13,7 +13,11 @@
 
 <script>
 export default {
-  
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+}
 }
 </script>
 
