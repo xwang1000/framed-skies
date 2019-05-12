@@ -17,8 +17,8 @@
         :key="picture.name"
         :src="`${publicPath + picture.name}`"
         :alt="picture.name"
-        :class="{ selectedPicture: picture.name === selectedPicture }"
-        @click="selectPicture(picture.name)"
+        :class="{ selectedPicture: selectedPictures.includes(picture.name) }"
+        @click="selectPictures(picture.name)"
       >
     </div>
   </div>
@@ -32,7 +32,7 @@ export default {
       publicPath: process.env.BASE_URL,
       pictures,
       selectedCategory: 'untitled-moods',
-      selectedPicture: 'null'
+      selectedPictures: []
     };
   },
   computed: {
@@ -44,12 +44,16 @@ export default {
     selectCategory (category) {
       this.selectedCategory = category
     },
-
-    selectPicture (name) {
-      this.selectedPicture = name
+    selectPictures (name) {
+      if (!this.selectedPictures.includes(name)) {
+        this.selectedPictures.push(name)
+      } else {
+        const index = this.selectedPictures.indexOf(name)
+        this.selectedPictures.splice(index, 1)
+      }
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -80,29 +84,33 @@ export default {
   border: 0.5px solid grey;
 }
 
+.gallery img:hover {
+  cursor: pointer;
+}
+
 .gallery img:not(selectedPicture) {
   width: 200px;
   height: 150px;
   object-fit: cover;
   margin: 5px;
-  transition: all .8s ease;
+  transition: all 1.5s;
 }
 
 .gallery img.selectedPicture {
   width: 400px;
   height: 300px;
-  transition: all .8s ease;
+  transition: all 1.5s;
 }
 
 @media screen and (max-width: 820px) {
   .gallery img:not(selectedPicture) {
     width: 40vw;
-    height: 100px;
+    height: 120px;
   }
 
   .gallery img.selectedPicture {
     width: 83vw;
-    height: 200px;
+    height: 240px;
   }
 }
 
