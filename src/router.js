@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Works from "./views/Works.vue";
 import About from "./views/About.vue";
 import SkyCollector from './views/SkyCollector.vue';
+import Admin from './views/Admin.vue'
 
 Vue.use(Router);
 
@@ -33,6 +34,11 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: About
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: Admin
     }
   ]
 });
